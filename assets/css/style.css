@@ -1,0 +1,329 @@
+ *{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+ }
+ 
+ @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Roboto+Serif:ital,opsz,wght@0,8..144,100;0,8..144,200;0,8..144,300;0,8..144,400;1,8..144,100;1,8..144,200;1,8..144,300;1,8..144,400&display=swap');
+
+ body{
+    
+    font-family: 'Roboto Serif', serif;
+    background-color:white
+    
+ }
+ .nombreempresa{
+    color: white;
+ }
+header{
+    
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    background-color: rgb(0, 0, 0);
+    align-items: center;
+    padding: 10px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.imglogo{
+    display: flex;
+    height: 20px;
+    margin-right: 10px;
+}
+.fa-bars{
+    color: white;
+}
+.menu > .fa-bars{
+    display: none;
+}
+.menu > ul {
+    list-style-type: none;
+}
+.menu > ul > li{
+    
+    display: inline-block;
+    position: relative;
+}
+.menu  ul  li  a{
+    display: block;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 20px;
+    font-size: 15px;
+    
+}
+.menu > ul > li > ul{
+    overflow: hidden;
+    max-height: 0;
+    display: none;
+    list-style-type: none;
+    left: -25px;
+    top: 45px;
+    position: absolute ;
+    background-color: rgb(0, 0, 0);
+}
+@media(max-width:586px){
+    .menu{
+        justify-content: space-between;
+    }
+    .nombreempresa{
+        position: static;
+    }
+    .menu > .fa-bars{
+        display: block;
+        font-size: 30px;
+        padding: 10px;
+       
+    }
+   .menu > ul{
+    position: fixed;
+    flex-direction: column;
+    background-color: rgb(250, 242, 242);
+    width: 150px;
+    height: 50vh;
+    justify-content: start;
+    padding-top: 100px;
+    align-items: center;
+    left: -300;
+    }
+   .menu > ul {
+    display: none;
+   }
+    .menu > .fa-bars:hover + ul {
+        left: 0;
+    }
+    .menu >  ul:hover{
+        left: 0;
+    }
+
+}
+.menu > ul > li > ul a{
+    text-decoration: none;
+    color: rgb(255, 254, 254);
+    display: block;
+    padding: 5px;
+    
+}
+.menu > ul > li:hover ul{
+    display: block;
+    max-height: 300px;
+    padding: 40px;
+    transition: 0.5s;
+}
+    
+.fa-truck-fast{
+    font-size:xx-large;
+    color: black;  
+}
+.fa-whatsapp{
+    font-size: xx-large;
+    color: black;
+}
+.fa-house-user{
+    font-size: xx-large;
+    color: black;
+}
+.atajos2{
+    align-items: center;
+    display: flex;
+   
+}
+
+
+.imgfondo{ 
+    display: flex;
+    margin: 0% 0px;
+    padding: 0px;
+    background-image:url(../img/pexels-deyan-georgiev-11106317.jpg);
+    width: 1100px;
+    height: 380px;
+    background-repeat: no-repeat;
+    background-position:center
+    
+    
+   
+}
+.frasefondo{
+    color: white;
+    display: flex;
+    padding: 30px;
+    margin: 0px;
+    height: 60px;
+    flex-direction: column;
+   
+}
+.frasefondo2{
+    display: flex;
+    color: white;
+    padding: 55px;
+    margin: 20px;
+    
+}
+
+.atajos{
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    margin: 20px;
+    justify-content:space-around
+
+}
+
+    
+   
+
+@media(max-width:1100px){
+    
+.imgfondo{ 
+    margin: 100%;
+    background-image:url(../img/pexels-deyan-georgiev-11106317.jpg);
+    width: 1110px;
+    height: 370px;
+    background-size: cover;
+    background-position:center;
+    
+}
+}
+
+.tarjetas3{
+    display: flex;
+   flex-wrap: wrap;
+   justify-content:space-around;
+    
+   
+
+}
+
+ 
+   
+
+ 
+
+
+
+
+.imgdestacada{
+    
+    justify-content: space-between;
+    height: 3%;
+    padding: 3%;
+    width: 6%;
+    margin: 4%;
+}
+
+.container{
+    height: 1%;
+    padding: 3%;
+    width: 500px;
+    display: flex;
+    max-width: 1100px;
+}
+
+.subtitulo{
+    background-color: rgb(4, 3, 3);
+    display: flex;
+    justify-content: center;
+    color: white;
+    
+}
+
+.tarjeta{
+    
+    box-shadow: 0px 0px 25px 1px rgba(0,0,0,0.89);
+     width: 150px;
+    border: solid 2px;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 10px;
+}
+.tarjeta__img{
+    width: 100%;
+}
+.tarjeta__modelo{
+    margin: 10px;
+}
+.tarjeta__precio{
+    margin: 10px;
+    font-weight: bold;
+}
+.tarjeta__titulo{
+   margin: 8px; 
+}
+.tarjeta__boton{
+    text-decoration: none;
+    list-style-type: none;
+    border: none;
+    display: block;
+    width: 70px;
+    text-align: center;
+    margin: 10px;
+    padding: 6px;
+    border-radius: 5px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 249, 249);
+}
+
+   
+.tarjetacont{
+    display: flex;
+    max-width: 800px;
+    margin: 10px auto;
+   
+
+    
+
+}
+.footer{
+    
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(3, 3, 3);
+}
+
+.tarjetacontacto{
+    padding: 50px;
+    margin: 10px;
+    justify-content: center;
+   align-items: center;
+   border-radius: 10px;
+}
+.fa-instagram{
+    color: white;
+
+}
+.fa-square-facebook{
+    color: white;
+}
+.fa-square-youtube{
+    color: white;
+}
+
+.titulofooter{
+    font-size: medium;
+    
+}
+.compania{
+   
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex-wrap: wrap;
+    }
+.redes{
+    margin:20px
+}
+.compania a{
+    
+    text-decoration: none;
+    color: white;  
+    list-style-type: none;
+}
+.compania ul{
+    gap: 20px;
+    list-style-type: none;
+    
+}
