@@ -138,8 +138,8 @@ header{
     margin: 0% 0px;
     padding: 0px;
     background-image:url(../img/pexels-deyan-georgiev-11106317.jpg);
-    width: 1100px;
-    height: 380px;
+    width: 0px;
+    height:0px;
     background-repeat: no-repeat;
     background-position:center
     
@@ -177,7 +177,7 @@ header{
 @media(max-width:1100px){
     
 .imgfondo{ 
-    margin: 100%;
+    margin: 0;
     background-image:url(../img/pexels-deyan-georgiev-11106317.jpg);
     width: 1110px;
     height: 370px;
