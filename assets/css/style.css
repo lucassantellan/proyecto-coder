@@ -251,15 +251,12 @@ header{
 }
 
    
-.tarjetacont{
-    display: flex;
-    max-width: 800px;
-    margin: 10px auto;
+
    
 
     
 
-}
+
 .footer{
     
     color: white;
@@ -268,13 +265,7 @@ header{
     background-color: rgb(3, 3, 3);
 }
 
-.tarjetacontacto{
-    padding: 50px;
-    margin: 10px;
-    justify-content: center;
-   align-items: center;
-   border-radius: 10px;
-}
+
 .fa-instagram{
     color: white;
 
@@ -312,3 +303,65 @@ header{
     list-style-type: none;
     
 }
+
+.formulario{
+    box-shadow: 5px 5px 15px 5px #000000;
+    gap: 10px;
+    border-radius: 10px;
+    background-color: rgb(148, 148, 148);
+    color: rgb(0, 0, 0);
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 50px;
+    grid-template-areas: "titulo titulo"
+                         "nomapell email"
+                         "tel      asunto"
+                         "mensaje mensaje"
+                         "btn     btn";
+}
+
+.formulario h2:nth-child(1){
+    grid-area: titulo;
+}
+.formulario label:nth-child(5){
+    grid-area: nomApell;
+}
+.formulario label:nth-child(3){
+    grid-area: email;
+}
+.formulario label:nth-child(4){
+    grid-area: tel;
+}
+.formulario label:nth-child(5){
+    grid-area: asunto;
+}
+.formulario label:nth-child(7){
+    grid-area: mensaje;
+}
+.formulario button:nth-child(7){
+    grid-area: btn;
+    background-color: beige;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+}
+.formulario > label{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.formulario > label > input , .formulario > label > textarea{
+    background-color: transparent;
+    border: 0px;
+    border: solid 1px white;
+    outline: none;
+}
+.video{
+    display: flex;
+    justify-content: center;
+    
+}
+
